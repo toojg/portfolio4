@@ -605,7 +605,7 @@ img {
 .slide-div {
   color: var(--white);
   justify-content: center;
-  margin-bottom: 32px;
+  margin-bottom: 56px;
   display: flex;
 }
 
