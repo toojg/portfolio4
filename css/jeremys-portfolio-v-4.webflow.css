@@ -1167,7 +1167,7 @@ img {
   }
 
   .intro-loader {
-    display: flex;
+    display: none;
   }
 
   .project-copy-section {
@@ -1528,7 +1528,7 @@ img {
 
   .company-logos {
     grid-column-gap: 16px;
-    grid-row-gap: 16px;
+    grid-row-gap: 8px;
     flex-flow: wrap;
     justify-content: space-between;
   }
@@ -1539,8 +1539,8 @@ img {
   }
 
   .intro-vid-text {
-    grid-column-gap: 24px;
-    grid-row-gap: 24px;
+    grid-column-gap: 32px;
+    grid-row-gap: 32px;
     justify-content: center;
     align-items: flex-start;
   }
