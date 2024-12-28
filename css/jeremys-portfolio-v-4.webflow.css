@@ -1166,6 +1166,10 @@ img {
     width: 90vw;
   }
 
+  .intro-loader {
+    display: flex;
+  }
+
   .project-copy-section {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-auto-flow: row;
@@ -1173,6 +1177,20 @@ img {
 
   .project-content-main.container {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .lottie-animation {
+    width: 39%;
+  }
+
+  .intro-vid-text {
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .small-intro-vid {
+    width: 33%;
   }
 }
 
@@ -1231,6 +1249,20 @@ img {
   .case_study_card-copy.large_card {
     aspect-ratio: 2 / 3;
   }
+
+  .lottie-animation {
+    width: 49%;
+  }
+
+  .company-logos {
+    grid-column-gap: 42px;
+    grid-row-gap: 42px;
+  }
+
+  .intro-vid-text {
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -1240,6 +1272,15 @@ img {
 
   .pull-quote {
     font-size: 24px;
+  }
+
+  .pull-quote.inline-intro {
+    font-size: 28px;
+  }
+
+  .intro-text-div.load-in2 {
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
   }
 
   .content_section.background_white {
@@ -1479,6 +1520,33 @@ img {
 
   .list {
     padding-left: 20px;
+  }
+
+  .lottie-animation {
+    width: 60%;
+  }
+
+  .company-logos {
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    flex-flow: wrap;
+    justify-content: space-between;
+  }
+
+  .logo-div {
+    flex-flow: wrap;
+    width: 40%;
+  }
+
+  .intro-vid-text {
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .small-intro-vid {
+    width: 43%;
   }
 }
 
