@@ -77,6 +77,14 @@ img {
   padding-right: 16px;
 }
 
+.container.slider-container {
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  flex-flow: column;
+  padding-bottom: 40px;
+  display: flex;
+}
+
 .nav_link {
   font-size: 12px;
   text-decoration: none;
@@ -191,10 +199,9 @@ img {
   background-color: var(--off-white);
 }
 
-.content_section.background_white {
+.content_section.bottom-content {
   background-color: var(--black);
-  color: var(--black);
-  padding-top: 112px;
+  padding-top: 80px;
   padding-bottom: 16px;
   overflow: hidden;
 }
@@ -653,8 +660,8 @@ img {
 
 .slider-image {
   border-radius: 80px;
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
 }
 
 .type_24px {
@@ -1016,8 +1023,9 @@ img {
 
 .arrow {
   color: var(--white);
+  width: 32px;
   height: 32px;
-  font-size: 34px;
+  font-size: 24px;
 }
 
 .icon-2 {
@@ -1045,7 +1053,13 @@ img {
   width: 100%;
 }
 
-.flex {
+.div-attribute {
+  grid-column-gap: 9px;
+  grid-row-gap: 9px;
+  align-items: center;
+  margin-top: 24px;
+  font-size: 12px;
+  line-height: 140%;
   display: flex;
 }
 
@@ -1089,6 +1103,58 @@ img {
 
 .link-2 {
   padding-bottom: 1px;
+}
+
+.slide-nav {
+  display: none;
+}
+
+.slide {
+  color: var(--white);
+  background-image: linear-gradient(112deg, #1f2122, #161718 94%, #101112);
+  border: 1px solid #29292c;
+  border-radius: 8px;
+  width: 424px;
+  margin-right: 24px;
+  padding: 16px 20px;
+}
+
+.slider {
+  background-color: #ddd0;
+  height: 100%;
+}
+
+.mask-2 {
+  overflow: visible;
+}
+
+.div-block-6 {
+  display: flex;
+}
+
+.icon-3, .icon-4 {
+  display: none;
+}
+
+.right-arrow {
+  width: 32px;
+  height: 32px;
+  inset: -11% 0% auto auto;
+}
+
+.left-arrow {
+  width: 32px;
+  height: 32px;
+  display: none;
+  inset: -10% 0% auto 92%;
+}
+
+.link-morework {
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: -8px;
+  padding-top: 0;
+  display: flex;
 }
 
 @media screen and (max-width: 991px) {
@@ -1266,6 +1332,10 @@ img {
 }
 
 @media screen and (max-width: 479px) {
+  .container.slider-container {
+    padding-bottom: 0;
+  }
+
   .nav_mobile_bottom-content.container {
     height: 11vh;
   }
@@ -1283,7 +1353,7 @@ img {
     grid-row-gap: 40px;
   }
 
-  .content_section.background_white {
+  .content_section.bottom-content {
     padding-top: 40px;
   }
 
@@ -1547,6 +1617,20 @@ img {
 
   .small-intro-vid {
     width: 43%;
+  }
+
+  .slide {
+    width: auto;
+    margin-right: 16px;
+    padding: 8px;
+  }
+
+  .slide.video {
+    width: 260px;
+  }
+
+  .right-arrow {
+    top: -7%;
   }
 }
 
